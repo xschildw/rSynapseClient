@@ -9,8 +9,10 @@ Upload/Download a File from Synapse
 Functions for uploading and downloading files using the libcurl library that is part of RCurl.
 }
 \usage{
-synapseDownloadFile(url, checksum, curlHandle = getCurlHandle(), cacheDir = synapseCacheDir(), opts = .getCache("curlOpts"))
-synapseDownloadFileToDestination(url, destfile, checksum, curlHandle = getCurlHandle(), opts = .getCache("curlOpts"))
+synapseDownloadFile(url, checksum, curlHandle = getCurlHandle(),
+  cacheDir = synapseCacheDir(), opts = .getCache("curlOpts"))
+synapseDownloadFileToDestination(url, destfile, checksum, curlHandle = getCurlHandle(),
+  opts = .getCache("curlOpts"))
 synapseUploadFile(url, srcfile, checksum, contentType =
                  "application/binary", method = "curl", quiet = FALSE,
                  mode = "w", cacheOK = TRUE)

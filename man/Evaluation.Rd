@@ -7,7 +7,8 @@ Evaluation Constructor
 \description{
 Constructor for Evaluation
 }
-\usage{Evaluation(name, description, contentSource, status, submissionInstructionsMessage, submissionReceiptMessage)}
+\usage{Evaluation(name, description, contentSource, status,
+  submissionInstructionsMessage, submissionReceiptMessage)}
 \arguments{
  \item{name}{
  name for this Evaluation.
@@ -22,7 +23,8 @@ Constructor for Evaluation
  One of "PLANNED", "OPEN", "CLOSED", or "COMPLETED".
  }
  \item{submissionInstructionsMessage}{
- Instructions to be show to participants on how to craft Synapse File objects for submission to the Evaluation.
+ Instructions to be show to participants on how to craft Synapse File objects
+  for submission to the Evaluation.
  }
  \item{submissionReceiptMessage}{
  Message to display by client upon successful submission to the Evaluation.
@@ -53,7 +55,8 @@ Constructor for Evaluation
         status of the Evaluation - one of: "PLANNED", "OPEN", "CLOSED", or "COMPLETED"
         }
         \item{\code{submissionInstructionMessage}}{
-        Instructions to be show to participants on how to craft Synapse File objects for submission to the Evaluation.
+        Instructions to be show to participants on how to craft Synapse File
+          objects for submission to the Evaluation.
         }
         \item{\code{submissionInstructionMessage}}{
         Message to display by client upon successful submission to the Evaluation.

@@ -3,7 +3,7 @@
 \title{
 synSetEndpoints
 }
-
+\description{Sets the endpoints used by the Synapse R client}
 \usage{
 synSetEndpoints()
 synSetEndpoints(repoEndpoint, authEndpoint, fileEndpoint, portalEndpoint)

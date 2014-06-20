@@ -12,10 +12,18 @@ Synapse REST
 Functions providing a low-level interface to the Synapse REST API
 }
 \usage{
-synapseGet(uri, host = .getRepoEndpointLocation(), curlHandle = getCurlHandle(), anonymous = .getCache("anonymous"), path = .getRepoEndpointPrefix(), opts = .getCache("curlOpts"), entity=NULL)
-synapseDelete(uri, entity, host = .getRepoEndpointLocation(), curlHandle = getCurlHandle(), anonymous = FALSE, path = .getRepoEndpointPrefix(), opts = .getCache("curlOpts"))
-synapsePut(uri, entity, host = .getRepoEndpointLocation(), curlHandle = getCurlHandle(), anonymous = FALSE, path = .getRepoEndpointPrefix(), opts = .getCache("curlOpts"))
-synapsePost(uri, entity, host = .getRepoEndpointLocation(), curlHandle = getCurlHandle(), anonymous = FALSE, path = .getRepoEndpointPrefix(), opts = .getCache("curlOpts"))
+synapseGet(uri, host = .getRepoEndpointLocation(), curlHandle = getCurlHandle(),
+  anonymous = .getCache("anonymous"), path = .getRepoEndpointPrefix(),
+  opts = .getCache("curlOpts"), entity=NULL)
+synapseDelete(uri, entity, host = .getRepoEndpointLocation(),
+  curlHandle = getCurlHandle(), anonymous = FALSE, path = .getRepoEndpointPrefix(),
+  opts = .getCache("curlOpts"))
+synapsePut(uri, entity, host = .getRepoEndpointLocation(),
+  curlHandle = getCurlHandle(), anonymous = FALSE, path = .getRepoEndpointPrefix(),
+  opts = .getCache("curlOpts"))
+synapsePost(uri, entity, host = .getRepoEndpointLocation(),
+  curlHandle = getCurlHandle(), anonymous = FALSE, path = .getRepoEndpointPrefix(),
+  opts = .getCache("curlOpts"))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

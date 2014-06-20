@@ -3,7 +3,7 @@
 \title{
 synGetEndpoints
 }
-
+\description{Gets the endpoints used by the Synapse R client}
 \usage{
 synGetEndpoints()
 }

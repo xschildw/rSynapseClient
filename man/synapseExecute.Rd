@@ -4,10 +4,12 @@
   Execute Code and Upload Results to Synapse
 }
 \description{
-  Function for executing code, uploading results, and creating a provenance record in Synapse
+  Function for executing code, uploading results, and creating a provenance
+    record in Synapse
 }
 \usage{
-  synapseExecute(executable, args, resultParentId, codeParentId, resultEntityProperties,  resultEntityName, replChar=".")
+  synapseExecute(executable, args, resultParentId, codeParentId,
+    resultEntityProperties,  resultEntityName, replChar=".")
 }
 \arguments{
 	\item{executable}{
@@ -29,7 +31,8 @@
     the name for the result entity
 	}
 	\item{replChar}{
-    an optional replacement character used when 'scrubbing' illegal characters from entity names.  Default is "."
+    an optional replacement character used when 'scrubbing' illegal characters
+      from entity names.  Default is "."
 	}
 }
 \details{
@@ -37,8 +40,9 @@
     \itemize{
     \item{a function defined in the current session.}
     \item{a file on the local file system, including its full path and ending in ".R"}
-    \item{a Github Repository reference in the form of \code{list(repoName=<repository name>, sourceFile=<source File>)}.  
-   		The repo name is of the form \code{/owner/reponame}.  The source file is the full path to the R source file.}
+    \item{a Github Repository reference in the form of \code{list(repoName=<repository name>,
+      sourceFile=<source File>)}. The repo name is of the form \code{/owner/reponame}.
+      The source file is the full path to the R source file.}
     }
     
     A Code entity is created for the given Code.  If there is an existing Code entity in the target Synapse location (described below), 

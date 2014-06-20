@@ -1,5 +1,6 @@
 \name{synSetAnnotations}
 \alias{synSetAnnotations}
+\alias{synSetAnnotations<-}
 \docType{methods}
 \title{
 synSetAnnotations

@@ -9,7 +9,8 @@ Refresh the Auth Service Session Token
 Resets the counter in the Synapse auth service that determines when the token expires. 
 }
 \usage{
-sessionToken(sessionToken, checkValidity = FALSE, refreshDuration = .getCache("sessionRefreshDurationMin"))
+sessionToken(sessionToken, checkValidity = FALSE,
+  refreshDuration = .getCache("sessionRefreshDurationMin"))
 refreshSessionToken(sessionToken)
 }
 \arguments{
@@ -17,7 +18,8 @@ refreshSessionToken(sessionToken)
 Session token returned by the Synapse auth service
 }
   \item{checkValidity}{
-  		boolean indicating whether the session token's validity should be checked before setting it
+  		boolean indicating whether the session token's validity should be checked
+        before setting it
   		in the memory cache and before returning it to the caller
   }
   \item{refreshDuration}{
@@ -26,17 +28,19 @@ Session token returned by the Synapse auth service
 }
 
 \value{
-refreshSessionToken has no return value, but is called for it's side-effects. The first side effect is that the expiration counter maintained by 
-the Synapse auth service is reset. The second is that the local timestamp cache value is reset.
+refreshSessionToken has no return value, but is called for it's side-effects.
+  The first side effect is that the expiration counter maintained by the Synapse
+  auth service is reset. The second is that the local timestamp cache value is reset.
 
-sessionToken returns the current value of the session token. If the user is not logged in to
-Synapse, the function returns an empty string.
+sessionToken returns the current value of the session token. If the user is not
+  logged in to Synapse, the function returns an empty string.
 }
 \author{
 Matt Furia
 }
 \note{
-This function will throw an exception if the session token is invalid or is already expired. Also, this method is for internal
+This function will throw an exception if the session token is invalid or is
+  already expired. Also, this method is for internal
 use only.
 }
 
